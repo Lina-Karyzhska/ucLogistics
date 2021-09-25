@@ -1,0 +1,44 @@
+.contacts {
+  &__item {
+    display: grid;
+    grid-template-columns: 25px auto;
+
+    @include gradient;
+    line-height: 1.6;
+
+    &:hover {
+      color: transparent;
+
+      svg {
+        fill: url('#gradient');
+      }
+    }
+  }
+
+  &__svg {
+    width: 15px;
+    height: 15px;
+    margin-right: 0.5rem;
+
+    fill: #ffffff;
+
+    position: relative;
+    top: 5px;
+
+    justify-self: center;
+
+    &_mail {
+      width: 1.8rem;
+      left: -4px;
+      margin-right: 0px;
+    }
+  }
+
+  &__text {
+    @include standartText;
+  }
+
+  &__address {
+    cursor: default;
+  }
+}

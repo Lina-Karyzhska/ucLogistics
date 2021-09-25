@@ -1,0 +1,11 @@
+.ways-to-ship {
+  .hover-effect__img_wrapper {
+    padding-top: 28.3%;
+  }
+
+  &__wrapper {
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

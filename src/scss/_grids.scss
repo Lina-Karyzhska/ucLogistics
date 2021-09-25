@@ -1,0 +1,113 @@
+@mixin grid {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 20px;
+  grid-auto-flow: row;
+}
+
+.grid-gallery {
+  &__wrapper {
+    @include grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    margin-top: 30px;
+  }
+
+  &__item {
+    display: block;
+    position: relative;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    object-position: center;
+  }
+
+  &__title {
+    margin: auto;
+    text-align: center;
+    @include mText;
+
+    @media (max-width: 768px) {
+      @include sText;
+    }
+
+    &_wrapper {
+      display: flex;
+      width: 100%;
+      height: 100%;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      background-color: #0e0e0e70;
+    }
+  }
+}
+
+.grid-text-list {
+  @include grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 425px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__number {
+    @include sText;
+    @include gradient;
+    color: transparent;
+  }
+
+  &__date {
+    display: inline-block;
+    margin: 15px 0 5px;
+
+    font-size: 1rem;
+    line-height: 1.3;
+    color: #c4c4c4;
+  }
+
+  &__svg {
+    margin-bottom: 15px;
+    width: 30px;
+    height: 30px;
+
+    fill: url('#gradient');
+  }
+
+  &__text {
+    @include standartText;
+  }
+}
+
+.grid-partners {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 5vw;
+    row-gap: 0.5em;
+
+    @media (max-width: 425px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__title {
+    margin-bottom: 0.5em;
+  }
+
+  &__item {
+    width: 100%;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,12 @@
+.our-benefits {
+  &__content {
+    margin-top: 0.5em;
+  }
+
+  &__item {
+    &_title {
+      margin-bottom: 15px;
+      @include mText;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.socials {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0;
+  }
+
+  &__link {
+    display: block;
+  }
+
+  &__svg {
+    @include svgGradient;
+  }
+}

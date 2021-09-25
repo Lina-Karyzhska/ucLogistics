@@ -1,0 +1,10 @@
+.navigation {
+  &__item {
+    @include gradient;
+    @include standartText;
+
+    &:hover {
+      color: transparent;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.statistics {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    max-width: calc(2.75 * 1em);
+
+    @media (max-width: 768px) {
+      max-width: 45%;
+      width: 45%;
+
+      &:first-child {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__value {
+    font-size: 1em;
+    line-height: 1.075;
+
+    @media (max-width: 1024px) {
+      font-size: 36px;
+    }
+  }
+
+  &__text {
+    @include mText;
+
+    @media (max-width: 1024px) {
+      @include sText;
+    }
+  }
+}

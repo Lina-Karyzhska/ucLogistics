@@ -1,0 +1,85 @@
+.hamburger {
+  display: none;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+
+  @media (max-width: 550px) {
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__span {
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(91.96deg, #0bbdde 15.16%, #17c135 95.6%);
+
+    &::before,
+    &::after {
+      position: absolute;
+      display: block;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(91.96deg, #0bbdde 15.16%, #17c135 95.6%);
+      content: '';
+    }
+
+    &::before {
+      top: -8px;
+    }
+
+    &::after {
+      bottom: -8px;
+    }
+  }
+
+  &__span {
+    transition: background 0s 0.3;
+    &::before,
+    &::after {
+      transition-duration: 0.3s, 0.3s;
+      transition-delay: 0.3s, 0s;
+    }
+    &::before {
+      transition-property: top, \transform;
+    }
+    &::after {
+      transition-property: bottom, \transform;
+    }
+  }
+
+  &._active-button {
+    span {
+      background: none;
+      &::before,
+      &::after {
+        transition-delay: 0s, 0.3s;
+      }
+      &::before {
+        top: 0;
+        transform: rotate(45deg);
+      }
+      &::after {
+        bottom: 0;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.for-shippers {
+  .section {
+    margin-bottom: 0;
+  }
+}

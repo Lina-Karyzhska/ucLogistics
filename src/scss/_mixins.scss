@@ -1,0 +1,113 @@
+@mixin gradient {
+  background-image: linear-gradient(91.96deg, #0bbdde 15.16%, #17c135 95.6%);
+  -webkit-background-clip: text;
+
+  transition: all 0.2s linear;
+}
+
+@mixin backgroundGradient {
+  background-image: linear-gradient(91.96deg, #0bbdde 15.16%, #17c135 95.6%);
+}
+
+@mixin simpleButton {
+  border-width: 1px;
+  border-color: #ffffff;
+  background-image: none;
+}
+
+@mixin buttonWithBorderGradient {
+  border-image: linear-gradient(91.96deg, #0bbdde 15.16%, #17c135 95.6%);
+  border-image-slice: 1;
+}
+
+@mixin buttonWithGradient {
+  padding: 13px 2.5em;
+  @include backgroundGradient;
+  color: #ffffff;
+  line-height: 1;
+
+  &:hover {
+    border-width: 1px;
+    padding: 12px calc(2.5em - 1px);
+    -webkit-background-clip: text;
+    color: transparent;
+    @include buttonWithBorderGradient;
+  }
+}
+
+@mixin buttonWithoutGradient {
+  @include simpleButton;
+
+  &:hover {
+    border: none;
+    padding: 11px calc(2.5em + 1px);
+    @include backgroundGradient;
+  }
+}
+
+@mixin svgGradient {
+  fill: #ffffff;
+
+  &:hover {
+    fill: url('#gradient');
+  }
+}
+
+@mixin standartText {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@mixin sText {
+  font-size: 1.3rem;
+  line-height: 1.7;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+@mixin mText {
+  font-size: 1.7rem;
+  line-height: 1.2;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+@mixin form-425 {
+  @media (max-width: 425px) {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@function vw($target, $from: 1440) {
+  $vw-context: ($from * 0.01) * 1px;
+  $vw-value: ($target/$vw-context);
+  @return $vw-value * 1vw;
+}
+
+@mixin adapt($name, $responsive, $min, $max: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    #{$name}: $min;
+  }
+
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      #{$name}: $max;
+    }
+  }
+
+  #{$name}: $responsive;
+}

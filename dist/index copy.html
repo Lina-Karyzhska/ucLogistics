@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <title>UC Logistics</title>
+</head>
+
+<body>
+    <!-- <?php include_once("images/socials.svg"); ?> -->
+    <section class="section first-screen">
+        <header class="header section">
+    <div class="wrapper header__wrapper">
+        <div class="logo">
+    <img class="logo__img" src="./images/logo.png" alt="logo">
+</div>
+        <nav class="navigation">
+    <ul class="navigation__list">
+        <li class="navigation__item">
+            <a href="index.html">Home</a>
+        </li>
+        <li class="navigation__item">
+            <a href="#">About us</a>
+        </li>
+        <li class="navigation__item">
+            <a href="#">Careers</a>
+        </li>
+        <li class="navigation__item">
+            <a href="#">News</a>
+        </li>
+        <li class="navigation__item">
+            <a href="#">Contact</a>
+        </li>
+    </ul>
+</nav>
+        <div class="contacts__item">
+    <svg class="contacts__svg">
+        <use xlink:href="images/contacts.svg#phone"></use>
+    </svg>
+    <a class="contacts__text" href="tel:(773) 904 0023">(773) 904 0023</a>
+</div>
+
+        <button class="hamburger">
+            <span class="hamburger__span">menu toggle</span>
+        </button>
+    </div>
+</header>
+        <div class="main-slider">
+            <div class="main-slider__item">
+                <img class="main-slider__img" src="./images/galleryHome/1.png" alt="gallery image">
+            </div>
+
+            <div class="main-slider__item">
+                <img class="main-slider__img" src="./images/galleryHome/2.png" alt="gallery image">
+            </div>
+
+            <div class="main-slider__item">
+                <img class="main-slider__img" src="./images/galleryHome/2.png" alt="gallery image">
+            </div>
+        </div>
+
+        <div class="first-screen__content">
+            <div class="wrapper first-screen__wrapper">
+                <div class="first-screen__content_main">
+                    <div class="first-screen__content_info">
+                        <div class="main-slider__text-slider">
+                            <div>
+                                <p class="first-screen__content_info_text">A meaningful approach to North American
+                                    freight
+                                    shipping.</p>
+                                <h1 class="first-screen__content_info_title">Beyond <br> the limits!</h1>
+                            </div>
+
+                            <div>
+                                <p class="first-screen__content_info_text">A meaningful approach to North American
+                                    freight
+                                    shipping.</p>
+                                <h1 class="first-screen__content_info_title">Move <br> the limits!</h1>
+                            </div>
+
+                            <div>
+                                <p class="first-screen__content_info_text">A meaningful approach to North American
+                                    freight
+                                    shipping.</p>
+                                <h1 class="first-screen__content_info_title">Hello <br> the limits!</h1>
+                            </div>
+                        </div>
+
+                        <button class="button button__without-gradient first-screen__button_text">Request a
+                            quote</button>
+                    </div>
+
+                    <div class="main-slider__slider-counter">
+                        <span id="main-slider-counter">01</span>/<sup id="main-slider-amount"></sup>
+                    </div>
+
+                    <div id="main-slider__dots" class="main-slider__dots"></div>
+                </div>
+
+                <div class="first-screen__controls">
+                    <div class="first-screen__socials">
+                        <div class="socials">
+    <ul class="socials__list">
+        <li>
+            <a class="socials__link" href="#">
+                <svg class="socials__svg">
+                    <use xlink:href="./images/socials.svg#facebook"></use>
+                </svg>
+            </a>
+        </li>
+
+        <li>
+            <a class="socials__link" href="#">
+                <svg class="socials__svg">
+                    <use xlink:href="./images/socials.svg#youtube"></use>
+                </svg>
+            </a>
+        </li>
+
+        <li>
+            <a class="socials__link" href="#">
+                <svg class="socials__svg">
+                    <use xlink:href="./images/socials.svg#telegram"></use>
+                </svg>
+            </a>
+        </li>
+
+        <li>
+            <a class="socials__link" href="#">
+                <svg class="socials__svg">
+                    <use xlink:href="./images/socials.svg#instagram"></use>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a class="socials__link" href="#">
+                <svg class="socials__svg">
+                    <use xlink:href="./images/socials.svg#viber"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</div>
+                    </div>
+
+                    <div class="first-screen__buttons">
+                        <a href="for-shippers.html" class="first-screen__button">
+                            <span class="first-screen__button_text">For shippers</span>
+                            <div><span class="first-screen__button_text">For shippers</span></div>
+                        </a>
+
+                        <a href="for-carriers.html" class="first-screen__button">
+                            <span class="first-screen__button_text">For Carriers</span>
+                            <div><span class="first-screen__button_text">For Carriers</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="section">
+    <div class="wrapper grid-gallery ways-to-ship">
+        <h2 class="title">Ways to Ship</h2>
+
+        <div class="grid-gallery__wrapper ways-to-ship__wrapper">
+            <a href="truckload.html" class="grid-gallery__item hover-effect__item">
+                <div class="hover-effect__img_wrapper">
+                    <img class="grid-gallery__img hover-effect__img" src="images/waysToShip/1.png" alt="background">
+                </div>
+                <div class="grid-gallery__title_wrapper">
+                    <h3 class="grid-gallery__title">Truckload</h3>
+                </div>
+            </a>
+
+            <a href="ltl-shipping.html" class="grid-gallery__item hover-effect__item">
+                <div class="hover-effect__img_wrapper">
+                    <img class="grid-gallery__img hover-effect__img" src="images/waysToShip/2.png" alt="background">
+                </div>
+                <div class="grid-gallery__title_wrapper">
+                    <h3 class="grid-gallery__title">LTL Shipping</h3>
+                </div>
+            </a>
+
+            <a href="expedited-freight.html" class="grid-gallery__item hover-effect__item">
+                <div class="hover-effect__img_wrapper">
+                    <img class="grid-gallery__img hover-effect__img" src="images/waysToShip/3.png" alt="background">
+                </div>
+                <div class="grid-gallery__title_wrapper">
+                    <h3 class="grid-gallery__title">Expedited Freight</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="wrapper why-choose-us">
+        <div class="why-choose-us__content">
+            <h2 class="title">Why choose us?</h2>
+            <p class="why-choose-us__content_text">
+                US Logistics, which provides the best services, has qualified carriers, the latest technology and the
+                best prices. US Logistics is a company with many years of experience that will satisfy all your freight
+                needs. We are your best intermediaries and will help you handle all your shipments for you.
+            </p>
+        </div>
+
+        <div class="grid-text-list">
+            <div class="why-choose-us__item">
+                <span class="grid-text-list__number">01/</span>
+                <h3 class="why-choose-us__item_title">The highest service</h3>
+                <p class="grid-text-list__text">
+                    The service in US Logistics is at the highest level and we guarantee the quality of our services and
+                    only with us you will get the best offer.
+                </p>
+            </div>
+
+            <div class="why-choose-us__item">
+                <span class="grid-text-list__number">02/</span>
+                <h3 class="why-choose-us__item_title">Forget about the problem</h3>
+                <p class="grid-text-list__text">
+                    Choose US Logistics and forget about the problem of transporting your shipments .
+                </p>
+            </div>
+
+            <div class="why-choose-us__item">
+                <span class="grid-text-list__number">03/</span>
+                <h3 class="why-choose-us__item_title">Save you money and time</h3>
+                <p class="grid-text-list__text">
+                    US Logistics will save you money and time. ( We want your cooperation with us to be effective and
+                    profitable, so that you are satisfied with the result. )
+                </p>
+            </div>
+
+            <div class="why-choose-us__item">
+                <span class="grid-text-list__number">04/</span>
+                <h3 class="why-choose-us__item_title">Best solutions</h3>
+                <p class="grid-text-list__text">
+                    US Logistics will save you money and time. ( We want your cooperation with us to be effective and
+                    profitable, so that you are satisfied with the result. )
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="wrapper grid-gallery">
+        <h2 class="title">Industry solution</h2>
+
+        <div class="grid-gallery__wrapper industry-solutions">
+            <div class="grid-gallery__item">
+                <img class="grid-gallery__img" src="images/industrySolution/1.png" alt="background">
+                <div class="grid-gallery__title_wrapper">
+                    <h3 class="grid-gallery__title">Automotive Industry</h3>
+                </div>
+            </div>
+
+            <div class="grid-gallery__item">
+                <img class="grid-gallery__img" src="images/industrySolution/2.png" alt="background">
+                <div class="grid-gallery__title_wrapper">
+                    <h3 class="grid-gallery__title">Chemicals & Pharmaceuticals</h3>
+                </div>
+            </div>
+
+            <div class="grid-gallery__item">
+                <img class="grid-gallery__img" src="images/industrySolution/3.png" alt="background">
+                <div class="grid-gallery__title_wrapper">
+                    <h3 class="grid-gallery__title">Manufacturing Industry</h3>
+                </div>
+            </div>
+
+            <div class="grid-gallery__item">
+                <img class="grid-gallery__img" src="images/industrySolution/4.png" alt="background">
+                <div class="grid-gallery__title_wrapper">
+                    <h3 class="grid-gallery__title">Freight Forwarding</h3>
+                </div>
+            </div>
+
+            <div class="grid-gallery__item">
+                <img class="grid-gallery__img" src="images/industrySolution/5.png" alt="background">
+                <div class="grid-gallery__title_wrapper">
+                    <h3 class="grid-gallery__title">Steel & Machinery</h3>
+                </div>
+            </div>
+
+            <div class="grid-gallery__item">
+                <img class="grid-gallery__img" src="images/industrySolution/6.png" alt="background">
+                <div class="grid-gallery__title_wrapper">
+                    <h3 class="grid-gallery__title">Hvp & Fixtures</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="wrapper statistics">
+        <div class="statistics__item">
+            <h3 class="statistics__value">99,9%</h3>
+            <p class="statistics__text">Claims free</p>
+        </div>
+        <div class="statistics__item">
+            <h3 class="statistics__value">99,5%</h3>
+            <p class="statistics__text">On time pick up and delivery for expedites</p>
+        </div>
+        <div class="statistics__item">
+            <h3 class="statistics__value">99,7%</h3>
+            <p class="statistics__text">Customer retention</p>
+        </div>
+        <div class="statistics__item">
+            <h3 class="statistics__value">365</h3>
+            <p class="statistics__text">Always open</p>
+        </div>
+    </div>
+</section>
+<section class="section link-section">
+    <a href="for-shippers.html" class="hover-effect__item link-section__item">
+        <div class="hover-effect__img_wrapper">
+            <img class="hover-effect__img" src="images/linkSection/1.png" alt="background">
+        </div>
+        <div class="grid-gallery__title_wrapper link-section__wrapper">
+            <div class="link-section__content">
+                <h2 class="title">For shippers</h2>
+                <p class="link-section__text">
+                    While we ship the goods, our customers produce it. US Logistics has all licenses under all rules and
+                    guidelines. The company and the approved carrier insure freight, so our customers are always
+                    confident
+                    in the value of cargo.
+                </p>
+                <div class="more-btn">
+    <span class="more-btn__text">more</span>
+    <svg class="more-btn__svg" width="24" height="12" viewBox="0 0 24 12" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM23.5303 6.53033C23.8232 6.23744 23.8232 5.76256 23.5303 5.46967L18.7574 0.696699C18.4645 0.403806 17.9896 0.403806 17.6967 0.696699C17.4038 0.989592 17.4038 1.46447 17.6967 1.75736L21.9393 6L17.6967 10.2426C17.4038 10.5355 17.4038 11.0104 17.6967 11.3033C17.9896 11.5962 18.4645 11.5962 18.7574 11.3033L23.5303 6.53033ZM1 6.75L23 6.75V5.25L1 5.25L1 6.75Z"
+            fill="url(#gradient)" />
+    </svg>
+</div>
+            </div>
+        </div>
+    </a>
+
+    <a href="for-carriers.html" class="hover-effect__item link-section__item">
+        <div class="hover-effect__img_wrapper link-section__img_wrapper">
+            <img class="hover-effect__img" src="images/linkSection/2.png" alt="background">
+        </div>
+        <div class="grid-gallery__title_wrapper link-section__wrapper">
+            <div class="link-section__content">
+                <h2 class="title">For Carriers</h2>
+                <p class="link-section__text">
+                    We work tirelessly to be the best freight broker for experienced carriers. We have a common goal -
+                    delivery. Achieving it requires a common approach and hard work. And so you need a reliable freight
+                    broker who will do everything for a successful outcome.
+                </p>
+                <div class="more-btn">
+    <span class="more-btn__text">more</span>
+    <svg class="more-btn__svg" width="24" height="12" viewBox="0 0 24 12" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM23.5303 6.53033C23.8232 6.23744 23.8232 5.76256 23.5303 5.46967L18.7574 0.696699C18.4645 0.403806 17.9896 0.403806 17.6967 0.696699C17.4038 0.989592 17.4038 1.46447 17.6967 1.75736L21.9393 6L17.6967 10.2426C17.4038 10.5355 17.4038 11.0104 17.6967 11.3033C17.9896 11.5962 18.4645 11.5962 18.7574 11.3033L23.5303 6.53033ZM1 6.75L23 6.75V5.25L1 5.25L1 6.75Z"
+            fill="url(#gradient)" />
+    </svg>
+</div>
+            </div>
+        </div>
+    </a>
+</section>
+<section class="section">
+    <div class="wrapper our-benefits">
+        <h2 class="title">Our benefits:</h2>
+        <div class="grid-text-list our-benefits__content">
+            <div class="our-benefits__item">
+                <svg class="grid-text-list__svg">
+                    <use xlink:href="images/benefits.svg#service"></use>
+                </svg>
+                <h1 class="our-benefits__item_title">An excellent service</h1>
+                <p class="grid-text-list__text">
+                    An excellent service is when the service is provided qualitatively,
+                    efficiently and profitably. And our company will definitely provide it.
+                </p>
+            </div>
+
+            <div class="our-benefits__item">
+                <svg class="grid-text-list__svg">
+                    <use xlink:href="images/benefits.svg#support"></use>
+
+                </svg>
+                <h1 class="our-benefits__item_title">Support 24/7 to answer all your questions</h1>
+                <p class="grid-text-list__text">
+                    US Logistics has 24/7 support. We are always ready to answer all your
+                    questions about cargo or price. You can contact us by phone, e-mail or text message.
+                </p>
+            </div>
+
+            <div class="our-benefits__item">
+                <svg class="grid-text-list__svg">
+                    <use xlink:href="images/benefits.svg#case"></use>
+                </svg>
+                <h1 class="our-benefits__item_title">Quality carriers</h1>
+                <p class="grid-text-list__text">
+                    We know how you feel about the integrity of the goods and their
+                    transportation, but we choose only qualified carriers for your peace of mind and the confidence of
+                    our service.
+                </p>
+            </div>
+
+            <div class="our-benefits__item">
+                <svg class="grid-text-list__svg">
+                    <use xlink:href="images/benefits.svg#earth"></use>
+                </svg>
+                <h1 class="our-benefits__item_title">Monitor your shipment with tracking updates</h1>
+                <p class="grid-text-list__text">
+                    You can track your cargo to be sure of the reliability of the shipment.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section get-quote">
+    <div class="get-quote__content">
+        <h2 class="title">Get a quote!</h2>
+        <form class="get-quote__form form" action="">
+            <div class="get-quote__form_inputs form__inputs">
+                <div class="get-quote__form_group form__group">
+                    <label class="form__label" for="zip1">Where are you shipping from?</label>
+                    <input class="form__input" id="zip1" type="text" placeholder="Enter your Zip or Postal Code">
+                </div>
+                <div class="get-quote__form_group form__group">
+                    <label class="form__label" for="zip2">Where are you shipping to?</label>
+                    <input class="form__input" id="zip2" type="text" placeholder="Enter your Zip or Postal Code">
+                </div>
+            </div>
+            <button class="button__with-gradient get-quote__submit">Request a quote</button>
+        </form>
+        <p class="get-quote__form_question">Moving furniture or personal items?</p>
+    </div>
+</section>
+<section class="section">
+    <div class="wrapper grid-partners">
+        <h2 class="title grid-partners__title">Our Partners</h2>
+        <div class="grid-partners__wrapper">
+            <div class="grid-partners__item">
+                <img class="grid-partners__img" src="images/ourPartners/1.png" alt="partner logo">
+            </div>
+            <div class="grid-partners__item">
+                <img class="grid-partners__img" src="images/ourPartners/1.png" alt="partner logo">
+            </div>
+            <div class="grid-partners__item">
+                <img class="grid-partners__img" src="images/ourPartners/1.png" alt="partner logo">
+            </div>
+            <div class="grid-partners__item">
+                <img class="grid-partners__img" src="images/ourPartners/1.png" alt="partner logo">
+            </div>
+            <div class="grid-partners__item">
+                <img class="grid-partners__img" src="images/ourPartners/1.png" alt="partner logo">
+            </div>
+            <div class="grid-partners__item">
+                <img class="grid-partners__img" src="images/ourPartners/1.png" alt="partner logo">
+            </div>
+            <div class="grid-partners__item">
+                <img class="grid-partners__img" src="images/ourPartners/1.png" alt="partner logo">
+            </div>
+            <div class="grid-partners__item">
+                <img class="grid-partners__img" src="images/ourPartners/1.png" alt="partner logo">
+            </div>
+            <div class="grid-partners__item">
+                <img class="grid-partners__img" src="images/ourPartners/1.png" alt="partner logo">
+            </div>
+            <div class="grid-partners__item">
+                <img class="grid-partners__img" src="images/ourPartners/1.png" alt="partner logo">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="wrapper">
+        <h1 class="title latest-news__title">Latest news</h1>
+
+        <div class="grid-text-list latest-news">
+            <a class="hover-effect__item latest-news__item" href="#">
+                <div class="hover-effect__img_wrapper">
+                    <img class="hover-effect__img" src="images/latestNews/1.png" alt="news image">
+                </div>
+                <span class="grid-text-list__date">03/05/21</span>
+                <h3 class="latest-news__item_title">Lorem ipsum dolor sit amet</h3>
+                <p class="grid-text-list__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim. Lorem ipsum dolor sit amet,
+                    consectetur.
+                </p>
+                <div class="more-btn">
+    <span class="more-btn__text">more</span>
+    <svg class="more-btn__svg" width="24" height="12" viewBox="0 0 24 12" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM23.5303 6.53033C23.8232 6.23744 23.8232 5.76256 23.5303 5.46967L18.7574 0.696699C18.4645 0.403806 17.9896 0.403806 17.6967 0.696699C17.4038 0.989592 17.4038 1.46447 17.6967 1.75736L21.9393 6L17.6967 10.2426C17.4038 10.5355 17.4038 11.0104 17.6967 11.3033C17.9896 11.5962 18.4645 11.5962 18.7574 11.3033L23.5303 6.53033ZM1 6.75L23 6.75V5.25L1 5.25L1 6.75Z"
+            fill="url(#gradient)" />
+    </svg>
+</div>
+            </a>
+
+            <a class="hover-effect__item latest-news__item" href="#">
+                <div class="hover-effect__img_wrapper">
+                    <img class="hover-effect__img" src="images/latestNews/2.png" alt="news image">
+                </div>
+                <span class="grid-text-list__date">03/05/21</span>
+                <h3 class="latest-news__item_title">Lorem ipsum dolor sit amet</h3>
+                <p class="grid-text-list__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim. Lorem ipsum dolor sit amet,
+                    consectetur.
+                </p>
+                <div class="more-btn">
+    <span class="more-btn__text">more</span>
+    <svg class="more-btn__svg" width="24" height="12" viewBox="0 0 24 12" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM23.5303 6.53033C23.8232 6.23744 23.8232 5.76256 23.5303 5.46967L18.7574 0.696699C18.4645 0.403806 17.9896 0.403806 17.6967 0.696699C17.4038 0.989592 17.4038 1.46447 17.6967 1.75736L21.9393 6L17.6967 10.2426C17.4038 10.5355 17.4038 11.0104 17.6967 11.3033C17.9896 11.5962 18.4645 11.5962 18.7574 11.3033L23.5303 6.53033ZM1 6.75L23 6.75V5.25L1 5.25L1 6.75Z"
+            fill="url(#gradient)" />
+    </svg>
+</div>
+            </a>
+
+            <a class="hover-effect__item latest-news__item" href="#">
+                <div class="hover-effect__img_wrapper">
+                    <img class="hover-effect__img" src="images/latestNews/3.png" alt="news image">
+                </div>
+                <span class="grid-text-list__date">03/05/21</span>
+                <h3 class="latest-news__item_title">Lorem ipsum dolor sit amet</h3>
+                <p class="grid-text-list__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim. Lorem ipsum dolor sit amet,
+                    consectetur.
+                </p>
+                <div class="more-btn">
+    <span class="more-btn__text">more</span>
+    <svg class="more-btn__svg" width="24" height="12" viewBox="0 0 24 12" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM23.5303 6.53033C23.8232 6.23744 23.8232 5.76256 23.5303 5.46967L18.7574 0.696699C18.4645 0.403806 17.9896 0.403806 17.6967 0.696699C17.4038 0.989592 17.4038 1.46447 17.6967 1.75736L21.9393 6L17.6967 10.2426C17.4038 10.5355 17.4038 11.0104 17.6967 11.3033C17.9896 11.5962 18.4645 11.5962 18.7574 11.3033L23.5303 6.53033ZM1 6.75L23 6.75V5.25L1 5.25L1 6.75Z"
+            fill="url(#gradient)" />
+    </svg>
+</div>
+            </a>
+
+            <a class="hover-effect__item latest-news__item" href="#">
+                <div class="hover-effect__img_wrapper">
+                    <img class="hover-effect__img" src="images/latestNews/4.png" alt="news image">
+                </div>
+                <span class="grid-text-list__date">03/05/21</span>
+                <h3 class="latest-news__item_title">Lorem ipsum dolor sit amet</h3>
+                <p class="grid-text-list__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim. Lorem ipsum dolor sit amet,
+                    consectetur.
+                </p>
+                <div class="more-btn">
+    <span class="more-btn__text">more</span>
+    <svg class="more-btn__svg" width="24" height="12" viewBox="0 0 24 12" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM23.5303 6.53033C23.8232 6.23744 23.8232 5.76256 23.5303 5.46967L18.7574 0.696699C18.4645 0.403806 17.9896 0.403806 17.6967 0.696699C17.4038 0.989592 17.4038 1.46447 17.6967 1.75736L21.9393 6L17.6967 10.2426C17.4038 10.5355 17.4038 11.0104 17.6967 11.3033C17.9896 11.5962 18.4645 11.5962 18.7574 11.3033L23.5303 6.53033ZM1 6.75L23 6.75V5.25L1 5.25L1 6.75Z"
+            fill="url(#gradient)" />
+    </svg>
+</div>
+            </a>
+        </div>
+    </div>
+</section>
+<svg height="0" width="0" style="position: absolute;">
+    <linearGradient id="gradient">
+        <stop offset="15.6%" stop-color="#0BBDDE" />
+        <stop offset="95.6%" stop-color="#17C135" />
+    </linearGradient>
+</svg>
+
+<footer class="footer">
+    <div class="wrapper footer__wrapper">
+        <div class="footer__item footer__logo">
+            <div class="logo">
+    <img class="logo__img" src="./images/logo.png" alt="logo">
+</div>
+        </div>
+        <div class="footer__socials">
+            <div class="socials">
+    <ul class="socials__list">
+        <li>
+            <a class="socials__link" href="#">
+                <svg class="socials__svg">
+                    <use xlink:href="./images/socials.svg#facebook"></use>
+                </svg>
+            </a>
+        </li>
+
+        <li>
+            <a class="socials__link" href="#">
+                <svg class="socials__svg">
+                    <use xlink:href="./images/socials.svg#youtube"></use>
+                </svg>
+            </a>
+        </li>
+
+        <li>
+            <a class="socials__link" href="#">
+                <svg class="socials__svg">
+                    <use xlink:href="./images/socials.svg#telegram"></use>
+                </svg>
+            </a>
+        </li>
+
+        <li>
+            <a class="socials__link" href="#">
+                <svg class="socials__svg">
+                    <use xlink:href="./images/socials.svg#instagram"></use>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a class="socials__link" href="#">
+                <svg class="socials__svg">
+                    <use xlink:href="./images/socials.svg#viber"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</div>
+        </div>
+        <p class="footer__created">Created by vio.agency</p>
+        <p class="footer__copyright">© 2021 Copyright</p>
+        <div class="footer__item footer__navigation">
+            <h4 class="footer__title">NAVIGATION</h4>
+            <nav class="navigation">
+    <ul class="navigation__list">
+        <li class="navigation__item">
+            <a href="index.html">Home</a>
+        </li>
+        <li class="navigation__item">
+            <a href="#">About us</a>
+        </li>
+        <li class="navigation__item">
+            <a href="#">Careers</a>
+        </li>
+        <li class="navigation__item">
+            <a href="#">News</a>
+        </li>
+        <li class="navigation__item">
+            <a href="#">Contact</a>
+        </li>
+    </ul>
+</nav>
+        </div>
+        <div class="footer__item footer__technology">
+            <h4 class="footer__title">TECHNOLOGY</h4>
+            <a href="#" class="footer__technology_link">For Carrier Technology</a>
+            <a href="#" class="footer__technology_link">For Shipper Technology</a>
+        </div>
+        <div class="footer__item footer__contacts">
+            <h4 class="footer__title">CONTACT</h4>
+            <div>
+    <div class="contacts__item">
+    <svg class="contacts__svg">
+        <use xlink:href="images/contacts.svg#phone"></use>
+    </svg>
+    <a class="contacts__text" href="tel:(773) 904 0023">(773) 904 0023</a>
+</div>
+    <div class="contacts__item">
+        <svg class="contacts__svg contacts__svg_mail">
+            <use xlink:href="images/contacts.svg#mail"></use>
+        </svg>
+        <a class="contacts__text" href="mailto:info@us.logistics.com">info@us.logistics.com</a>
+    </div>
+    <div class="contacts__item">
+        <svg class="contacts__svg">
+            <use xlink:href="images/contacts.svg#pointer"></use>
+        </svg>
+        <address class="contacts__text contacts__address">4000 Bordentown Ave, Sayreville, NJ 08872</address>
+    </div>
+</div>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/main.min.js"></script>
+</body>
+
+</html>

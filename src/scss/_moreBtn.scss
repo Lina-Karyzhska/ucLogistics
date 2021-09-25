@@ -1,0 +1,27 @@
+.more-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__text {
+    margin-right: 10px;
+
+    @include gradient;
+    @include sText;
+    color: transparent;
+
+    @media (max-width: 1024px) {
+      @include standartText;
+    }
+  }
+
+  &__svg {
+    position: relative;
+    left: 0;
+    transition: 0.2s linear;
+
+    @media (max-width: 1024px) {
+      width: 18px;
+    }
+  }
+}
