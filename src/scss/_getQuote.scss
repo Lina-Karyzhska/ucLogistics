@@ -1,7 +1,6 @@
 .get-quote {
   padding-top: 37.6%;
   position: relative;
-  background-image: url('../images/getQuote/1.png');
   background-position: 80% bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,7 +64,7 @@
 
   &__submit {
     @media (max-width: 425px) {
-      width: 50%;
+      width: 180px;
     }
   }
 }

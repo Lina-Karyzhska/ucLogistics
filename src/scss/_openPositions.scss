@@ -1,0 +1,94 @@
+.open-positions {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0;
+  position: relative;
+
+  border-top: 2px solid #ffffff;
+
+  @media (max-width: 550px) {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  &__counter {
+    width: 6%;
+
+    @include gradient;
+    font-size: 18px;
+    line-height: 30px;
+    color: transparent;
+
+    @media (max-width: 550px) {
+      width: 100%;
+      padding-bottom: 5px;
+    }
+  }
+
+  &__position-title {
+    width: 35%;
+    padding-right: 20px;
+
+    font-size: 24px;
+    line-height: 28px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    @media (max-width: 550px) {
+      width: 100%;
+      padding-bottom: 5px;
+    }
+  }
+
+  &__country {
+    width: 16%;
+
+    @media (max-width: 768px) {
+      width: 13%;
+    }
+
+    @media (max-width: 550px) {
+      width: 100%;
+      padding-right: 125px;
+      padding-bottom: 5px;
+    }
+  }
+
+  &__type {
+    width: 25%;
+
+    @media (max-width: 768px) {
+      width: 23%;
+    }
+
+    @media (max-width: 550px) {
+      width: 100%;
+    }
+  }
+
+  &__country,
+  &__type {
+    @include standartText;
+  }
+
+  &__button {
+    @media (max-width: 550px) {
+      position: absolute;
+      bottom: 10px;
+      right: 0;
+      padding-right: 20px;
+    }
+  }
+
+  .more-btn {
+    &:hover {
+      .more-btn__svg {
+        left: 20px;
+      }
+    }
+  }
+}

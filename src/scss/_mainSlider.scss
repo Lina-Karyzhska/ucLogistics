@@ -19,6 +19,10 @@
   &__dots {
     align-self: flex-end;
     padding-bottom: 5vw;
+
+    @media (max-width: 550px) {
+      padding-bottom: 10vw;
+    }
   }
 
   &__dots-list {
@@ -57,6 +61,11 @@
 
     @media (max-width: 768px) {
       font-size: 24px;
+    }
+
+    @media (max-width: 550px) {
+      position: relative;
+      left: 20px;
     }
 
     sup {

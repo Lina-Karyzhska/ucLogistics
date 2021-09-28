@@ -1,5 +1,6 @@
 .header {
   padding: 10px 0;
+  width: 100%;
 
   position: absolute;
   top: 0;
@@ -8,6 +9,14 @@
 
   color: #ffffff;
 
+  &_static {
+    margin-bottom: 1.25em;
+
+    .header {
+      position: static;
+    }
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -15,18 +24,18 @@
   }
 
   .navigation {
-    width: 40%;
+    width: 55%;
 
-    @media (max-width: 768px) {
-      width: 55%;
+    &__item {
+      @include standartText;
     }
 
-    @media (max-width: 550px) {
+    @media (max-width: 768px) {
       display: flex;
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
 
-      position: absolute;
+      position: fixed;
       top: 0;
       right: -100%;
       z-index: 1;
@@ -36,9 +45,7 @@
 
       &__item:not(:last-child) {
         margin-bottom: 12.5vw;
-        a {
-          @include sText;
-        }
+        @include sText;
       }
 
       &._active-menu {
@@ -50,11 +57,21 @@
       display: flex;
       justify-content: space-between;
 
-      @media (max-width: 550px) {
+      @media (max-width: 768px) {
         margin: auto;
         flex-direction: column;
         align-items: center;
       }
+    }
+
+    &__item {
+      @include sText;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .logo {
+      width: 60px;
     }
   }
 }

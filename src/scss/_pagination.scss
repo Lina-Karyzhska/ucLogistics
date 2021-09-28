@@ -1,0 +1,47 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__arrow {
+    width: 24px;
+    height: 12px;
+
+    fill: url(#gradient);
+    transition: fill 0.2s linear;
+
+    &:hover {
+      fill: #ffffff;
+    }
+
+    &_left {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__controllers {
+    font-size: 0;
+    margin: 0 15px;
+  }
+
+  &__btn {
+    color: #ffffff;
+    @include gradient;
+
+    &:not(:nth-child(4)) {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      color: transparent;
+    }
+
+    &_active {
+      color: transparent;
+    }
+  }
+
+  &__dots {
+    font-size: 16px;
+  }
+}

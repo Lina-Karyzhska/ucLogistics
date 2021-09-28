@@ -1,0 +1,80 @@
+.contact-screen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 550px) {
+    flex-direction: column;
+  }
+
+  &__content {
+    width: 40%;
+    font-size: 0;
+
+    @media (max-width: 550px) {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    &_text {
+      width: 100%;
+      @include standartText;
+    }
+  }
+
+  &__contacts {
+    width: 50%;
+
+    @media (max-width: 550px) {
+      width: 100%;
+    }
+
+    .contacts {
+      &__item {
+        border-top: 2px solid #ffffff;
+        padding: 15px 0;
+
+        @media (max-width: 768px) {
+          padding: 12px 0;
+        }
+      }
+
+      &__svg {
+        fill: url(#gradient);
+      }
+
+      &__text {
+        @include sText;
+
+        @media (max-width: 768px) {
+          @include standartText;
+        }
+      }
+    }
+  }
+
+  &__socials {
+    border-top: 2px solid #ffffff;
+    padding-top: 15px;
+
+    &_wrapper {
+      width: 270px;
+
+      @media (max-width: 768px) {
+        width: 213px;
+      }
+    }
+  }
+
+  .socials {
+    &__svg {
+      width: 30px;
+      height: 30px;
+
+      @media (max-width: 768px) {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}

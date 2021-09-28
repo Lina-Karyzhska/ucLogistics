@@ -69,6 +69,13 @@ ul {
 .section {
   width: 100%;
   margin-bottom: 1.75em;
+
+  &-no-margin {
+    margin-bottom: 0;
+    .section {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .wrapper {

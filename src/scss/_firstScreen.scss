@@ -32,7 +32,11 @@
     }
 
     &_info {
-      padding-top: 20vh;
+      padding-top: 8vw;
+
+      @media (max-width: 550px) {
+        padding-top: 128px;
+      }
 
       &_text {
         width: 70%;
@@ -42,10 +46,14 @@
           margin-bottom: 5px;
           @include standartText;
         }
+
+        @media (max-width: 550px) {
+          width: 100%;
+        }
       }
 
       &_title {
-        font-size: 1em;
+        font-size: 5vw;
         line-height: 1.075;
         margin-bottom: 30px;
 
@@ -98,6 +106,7 @@
     @media (max-width: 768px) {
       width: 100%;
       right: 0;
+      margin-top: 15px;
     }
   }
 
@@ -106,8 +115,6 @@
     display: flex;
     justify-content: center;
     padding: 5vw 0;
-    margin-top: 15px;
-
     position: relative;
 
     background-color: #0e0e0e;

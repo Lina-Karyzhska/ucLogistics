@@ -1,0 +1,13 @@
+.news-screen {
+  &__news {
+    .grid-text-list:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    @include adapt(margin-bottom, vw(60px), 40px, 60px);
+  }
+
+  &__pagination {
+    @include adapt(margin-bottom, vw(100px), 60px, 100px);
+  }
+}

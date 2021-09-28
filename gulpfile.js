@@ -9,10 +9,10 @@ const scss         = require("gulp-sass"),
       browserSync  = require("browser-sync").create(),
       del          = require("del"),
       fileinclude  = require("gulp-file-include"),
-      imgCompress  = require('imagemin-jpeg-recompress');
+      imgCompress  = require("imagemin-jpeg-recompress");
 
 function html() {
-    return src(['src/*.html', "!src/_*.html"])
+    return src(["src/*.html", "src/.htaccess", "!src/_*.html"])
         .pipe(fileinclude())
         .pipe(dest("dist"))
         .pipe(browserSync.stream());
@@ -20,31 +20,31 @@ function html() {
 
 function styles() {
     return src([
-        'node_modules/slick-slider/slick/slick.scss',
-        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css',
+        "node_modules/slick-slider/slick/slick.scss",
+        "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css",
         "src/scss/index.scss"
     ])
         .pipe(sourcemaps.init())
-        .pipe(scss({outputStyle: 'compressed'}))
+        .pipe(scss({outputStyle: "compressed"}))
         .pipe(autoprefixer({
-            overrideBrowserslist: ['last 5 versions'],
+            overrideBrowserslist: ["last 5 versions"],
             grid: true,
             cascade: true
          }))
-        .pipe(concat('styles.min.css'))
-        .pipe(sourcemaps.write('./'))
+        .pipe(concat("styles.min.css"))
+        .pipe(sourcemaps.write("./"))
         .pipe(dest("dist/css"))
         .pipe(browserSync.stream());
 };
 
 function scripts() {
     return src([
-        'node_modules/jquery/dist/jquery.js',
-        'node_modules/slick-slider/slick/slick.min.js',
-        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
-        'src/js/*.js'
+        "node_modules/jquery/dist/jquery.js",
+        "node_modules/slick-slider/slick/slick.min.js",
+        "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js",
+        "src/js/*.js"
     ])
-        .pipe(concat('main.min.js')) 
+        .pipe(concat("main.min.js")) 
         .pipe(uglify())
         .pipe(dest("dist/js"))
         .pipe(browserSync.stream());
@@ -57,7 +57,7 @@ function imgs() {
             loops: 4,
             min: 70,
             max: 80,
-            quality: 'high'
+            quality: "high"
           }),
           imagemin.gifsicle(),
           imagemin.optipng(),
@@ -89,11 +89,11 @@ function fonts() {
 };
 
 function cleanDist() {
-    return del('dist');
+    return del("dist");
 }
 
 function watching() {
-    watch(["src/*.html"], html);
+    watch(["src/*.html", "src/.htaccess"], html);
     watch(["src/js/**/*.js"], scripts);
     watch(["src/scss/**/*.scss"], styles);
     watch(["src/images/**/*.{jpg,png,gif,ico,webp}"], imgs);

@@ -9,7 +9,7 @@
   text-indent: -9999px;
   appearance: none;
 
-  @media (max-width: 550px) {
+  @media (max-width: 768px) {
     display: block;
     position: relative;
     z-index: 1;
@@ -75,11 +75,5 @@
         transform: rotate(-45deg);
       }
     }
-  }
-}
-
-.for-shippers {
-  .section {
-    margin-bottom: 0;
   }
 }
