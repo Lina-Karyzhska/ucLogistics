@@ -13,7 +13,8 @@
       max-width: 45%;
       width: 45%;
 
-      &:first-child {
+      &:first-child,
+      &:nth-child(2) {
         margin-bottom: 15px;
       }
     }
@@ -29,10 +30,18 @@
   }
 
   &__text {
+    margin-top: 15px;
+
+    font-family: 'Roboto Medium', sans-serif;
+    font-weight: 500;
     @include mText;
 
     @media (max-width: 1024px) {
       @include sText;
+    }
+
+    @media (max-width: 550px) {
+      margin-top: 10px;
     }
   }
 }

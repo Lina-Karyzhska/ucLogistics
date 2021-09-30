@@ -12,7 +12,6 @@
 <body>
     <!-- <?php include_once("images/socials.svg"); ?> -->
     <section class="section first-screen">
-        @@include('_header.html')
         <div class="main-slider">
             <div class="main-slider__item">
                 <img class="main-slider__img" src="./images/galleryHome/4.png" alt="gallery image">
@@ -29,10 +28,14 @@
 
         <div class="first-screen__content">
             <div class="wrapper first-screen__wrapper">
-                <div class="first-screen__content_main">
-                    <div class="first-screen__content_info">
-                        <span class="first-screen__breadcrumbs">Home / LTL Shipping</span>
+                @@include('_header.html')
 
+                <div class="first-screen__content_main">
+                    <div class="first-screen__breadcrumbs">
+                        <span class="first-screen__breadcrumbs__span">Home / LTL Shipping</span>
+                    </div>
+
+                    <div class="first-screen__content_info">
                         <div class="main-slider__text-slider">
                             <div>
                                 <h1 class="first-screen__content_info_title">LTL Shipping</h1>
@@ -62,8 +65,10 @@
                             </div>
                         </div>
 
-                        <button class="button button__without-gradient first-screen__button_text">Request a
-                            quote</button>
+                        <button
+                            class="button button__without-gradient first-screen__button_text first-screen__get-quote">
+                            <span class="button__span">Request a quote</span>
+                        </button>
                     </div>
 
                     <div class="main-slider__slider-counter">
@@ -79,7 +84,7 @@
                     </div>
 
                     <div class="first-screen__buttons">
-                        <a href="for-shippers.html" class="first-screen__button first-screen__button_active">
+                        <a href="for-shippers.html" class="first-screen__button">
                             <span class="first-screen__button_text">For shippers</span>
                             <div><span class="first-screen__button_text ">For shippers</span></div>
                         </a>
@@ -93,3 +98,4 @@
             </div>
         </div>
     </section>
+    @@include('_getQuoteModal.html')

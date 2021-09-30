@@ -44,7 +44,7 @@
     }
 
     &_inputs {
-      width: calc(76% - 20px);
+      width: calc(76% - 10px);
 
       @media (max-width: 768px) {
         width: 100%;
@@ -63,8 +63,11 @@
   }
 
   &__submit {
-    @media (max-width: 425px) {
-      width: 180px;
+    width: calc(24% - 10px);
+    padding: 11.5px 0;
+
+    @media (max-width: 768px) {
+      width: calc(50% - 10px);
     }
   }
 }

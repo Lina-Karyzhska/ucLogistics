@@ -6,6 +6,9 @@
   &__item {
     &_title {
       margin-bottom: 15px;
+
+      font-family: 'Roboto Medium', sans-serif;
+      font-weight: 500;
       @include mText;
     }
   }

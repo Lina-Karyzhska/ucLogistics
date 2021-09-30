@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat Medium', sans-serif;
 }
 
 html,
@@ -62,12 +63,9 @@ ul {
   list-style-type: none;
 }
 
-.of-hidden {
-  overflow: hidden;
-}
-
 .section {
   width: 100%;
+  margin: auto;
   margin-bottom: 1.75em;
 
   &-no-margin {
@@ -80,6 +78,7 @@ ul {
 
 .wrapper {
   width: 90%;
+  max-width: 1920px;
   margin: 0 auto;
 
   @media (max-width: 425px) {
@@ -117,15 +116,18 @@ ul {
   }
 }
 
-.button {
-  color: #ffffff;
-  padding: 10px 2.5em;
-}
-
 .button__with-gradient {
   @include buttonWithGradient;
+
+  span {
+    font-family: 'Roboto Regular', sans-serif;
+  }
 }
 
 .button__without-gradient {
   @include buttonWithoutGradient;
+
+  span {
+    font-family: 'Roboto Regular', sans-serif;
+  }
 }

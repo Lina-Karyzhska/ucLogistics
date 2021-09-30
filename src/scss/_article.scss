@@ -30,9 +30,9 @@
 
   &__date {
     grid-column: 1 / 2;
+    font-size: 0;
 
     &_span {
-      display: block;
       @include sText;
       @include gradient;
       color: transparent;

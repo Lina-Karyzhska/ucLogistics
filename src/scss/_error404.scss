@@ -30,6 +30,8 @@
   }
 
   &__error {
+    font-family: 'Montserrat SemiBold', sans-serif;
+    font-weight: 600;
     font-size: 18px;
     line-height: 30px;
     color: #ffffff;
@@ -49,10 +51,6 @@
 
     font-size: 18px;
     text-align: center;
-
-    &:hover {
-      padding: 11px 0;
-    }
 
     @media (max-width: 768px) {
       width: 160px;

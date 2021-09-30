@@ -10,6 +10,8 @@
 }
 
 @mixin simpleButton {
+  color: #ffffff;
+
   border-width: 1px;
   border-color: #ffffff;
   border-style: solid;
@@ -22,34 +24,92 @@
 }
 
 @mixin buttonWithGradient {
-  padding: 13px 2.5em;
-  @include backgroundGradient;
   color: #ffffff;
   line-height: 1;
+  border-width: 1px;
+  position: relative;
+  @include buttonWithBorderGradient;
+
+  &::before {
+    content: '';
+
+    display: block;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    z-index: 0;
+
+    @include backgroundGradient;
+    opacity: 1;
+    transition: opacity 0.2s linear;
+  }
+
+  &__span {
+    @include backgroundGradient;
+    border-width: 1px;
+    -webkit-background-clip: text;
+    color: #ffffff;
+  }
 
   &:hover {
-    border-width: 1px;
-    padding: 12px calc(2.5em - 1px);
-    -webkit-background-clip: text;
-    color: transparent;
-    @include buttonWithBorderGradient;
+    &::before {
+      opacity: 0;
+    }
+
+    .button__with-gradient__span {
+      color: transparent;
+    }
   }
 }
 
 @mixin buttonWithoutGradient {
   @include simpleButton;
+  position: relative;
+
+  &::before {
+    content: '';
+
+    display: block;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    z-index: 0;
+
+    @include backgroundGradient;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+  }
 
   &:hover {
-    border: none;
-    padding: 11px calc(2.5em + 1px);
-    @include backgroundGradient;
+    // border: none;
+
+    &::before {
+      opacity: 1;
+    }
   }
 }
 
 @mixin svgGradient {
   fill: #ffffff;
+  transition: opacity 0.2s linear;
 
-  &:hover {
+  &_no-gradient {
+    opacity: 1;
+  }
+
+  &_gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    opacity: 0;
     fill: url('#gradient');
   }
 }
@@ -78,7 +138,7 @@
 }
 
 @mixin form-425 {
-  @media (max-width: 425px) {
+  @media (max-width: 550px) {
     width: 100%;
 
     &:not(:last-child) {

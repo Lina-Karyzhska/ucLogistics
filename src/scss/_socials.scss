@@ -7,6 +7,17 @@
 
   &__link {
     display: block;
+    position: relative;
+
+    &:hover {
+      .socials__svg_no-gradient {
+        opacity: 0;
+      }
+
+      .socials__svg_gradient {
+        opacity: 1;
+      }
+    }
   }
 
   &__svg {

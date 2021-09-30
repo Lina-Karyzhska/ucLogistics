@@ -20,8 +20,21 @@
 
     &_group {
       width: calc(33.33% - 10px);
-
       @include form-425;
     }
   }
+
+  &__btn {
+    width: 20%;
+    padding: 11.5px 0;
+
+    @media (max-width: 1024px) {
+      width: calc(33.33% - 10px);
+    }
+  }
+
+  // @media (max-width: 1024px) {
+  //   width: 100%;
+  //   margin-bottom: 20px;
+  // }
 }

@@ -2,25 +2,19 @@
   padding: 10px 0;
   width: 100%;
 
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-
   color: #ffffff;
-
-  &_static {
-    margin-bottom: 1.25em;
-
-    .header {
-      position: static;
-    }
-  }
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &_margin-width {
+    width: 90%;
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-bottom: 1.25em;
   }
 
   .navigation {
@@ -38,7 +32,7 @@
       position: fixed;
       top: 0;
       right: -100%;
-      z-index: 1;
+      z-index: 2;
 
       background-color: #0e0e0e;
       transition: right 0.3s linear;
@@ -46,6 +40,11 @@
       &__item:not(:last-child) {
         margin-bottom: 12.5vw;
         @include sText;
+
+        a {
+          font-family: 'Montserrat SemiBold', sans-serif;
+          font-weight: 600;
+        }
       }
 
       &._active-menu {

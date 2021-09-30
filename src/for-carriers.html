@@ -15,8 +15,14 @@
 <section class="section">
     <div class="wrapper contact-form">
         <h2 class="title contact-form__title">Work with us!</h2>
-        @@include('_contactForm.html')
+        <form class="contact-form__form form" action="">
+            @@include('_contactForm.html')
+            <button class="button button__with-gradient contact-form__btn">
+                <span class="button__span button__with-gradient__span">Enter desired position</span>
+            </button>
+        </form>
     </div>
 </section>
 @@include('_gallerySlider.html')
+@@include('_thanksModal.html')
 @@include('_footer.html')

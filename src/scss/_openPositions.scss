@@ -1,8 +1,10 @@
 .open-positions {
   display: flex;
   align-items: center;
+
   width: 100%;
   padding: 30px 0;
+
   position: relative;
 
   border-top: 2px solid #ffffff;
@@ -13,16 +15,27 @@
   }
 
   &__counter {
+    display: flex;
     width: 6%;
-
-    @include gradient;
-    font-size: 18px;
-    line-height: 30px;
-    color: transparent;
 
     @media (max-width: 550px) {
       width: 100%;
       padding-bottom: 5px;
+    }
+
+    &_span {
+      @include gradient;
+      font-size: 18px;
+      line-height: 30px;
+      color: transparent;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    @media (max-width: 550px) {
+      margin-bottom: 20px;
     }
   }
 
@@ -30,6 +43,8 @@
     width: 35%;
     padding-right: 20px;
 
+    font-family: 'Roboto Medium', sans-serif;
+    font-weight: 500;
     font-size: 24px;
     line-height: 28px;
 

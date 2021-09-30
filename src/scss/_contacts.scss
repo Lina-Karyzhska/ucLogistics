@@ -9,28 +9,34 @@
     &:hover {
       color: transparent;
 
-      svg {
-        fill: url('#gradient');
+      .contacts__svg_no-gradient {
+        opacity: 0;
       }
+
+      .contacts__svg_gradient {
+        opacity: 1;
+      }
+    }
+
+    &__svg {
+      display: flex;
+      position: relative;
     }
   }
 
   &__svg {
-    width: 15px;
+    width: 100%;
     height: 15px;
-    margin-right: 0.5rem;
-
-    fill: #ffffff;
 
     position: relative;
     top: 5px;
 
-    justify-self: center;
+    @include svgGradient;
+    justify-self: start;
 
-    &_mail {
-      width: 1.8rem;
-      left: -4px;
-      margin-right: 0px;
+    &_gradient {
+      width: 100%;
+      top: 5px;
     }
   }
 

@@ -62,26 +62,28 @@ $(function() {
         dots: false,
         variableWidth: true,
         appendArrows: '#gallery-slider__arrows',
-        nextArrow: `<svg class="gallery-slider__arrow" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM23.5303 6.53033C23.8232 6.23744 23.8232 5.76256 23.5303 5.46967L18.7574 0.696699C18.4645 0.403806 17.9896 0.403806 17.6967 0.696699C17.4038 0.989592 17.4038 1.46447 17.6967 1.75736L21.9393 6L17.6967 10.2426C17.4038 10.5355 17.4038 11.0104 17.6967 11.3033C17.9896 11.5962 18.4645 11.5962 18.7574 11.3033L23.5303 6.53033ZM1 6.75L23 6.75V5.25L1 5.25L1 6.75Z" fill="url(#paint0_linear)"/>
-            <defs>
-                <linearGradient id="paint0_linear" x1="4.3653" y1="6.1125" x2="16.0401" y2="14.9086" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#0BBDDE"/>
-                    <stop offset="1" stop-color="#17C135"/>
-                </linearGradient>
-            </defs>
-        </svg>`,
-        prevArrow: `<svg class="gallery-slider__arrow" style="transform: rotate(180deg)" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM23.5303 6.53033C23.8232 6.23744 23.8232 5.76256 23.5303 5.46967L18.7574 0.696699C18.4645 0.403806 17.9896 0.403806 17.6967 0.696699C17.4038 0.989592 17.4038 1.46447 17.6967 1.75736L21.9393 6L17.6967 10.2426C17.4038 10.5355 17.4038 11.0104 17.6967 11.3033C17.9896 11.5962 18.4645 11.5962 18.7574 11.3033L23.5303 6.53033ZM1 6.75L23 6.75V5.25L1 5.25L1 6.75Z" fill="url(#paint0_linear)"/>
-            <defs>
-                <linearGradient id="paint0_linear" x1="4.3653" y1="6.1125" x2="16.0401" y2="14.9086" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#0BBDDE"/>
-                    <stop offset="1" stop-color="#17C135"/>
-                </linearGradient>
-            </defs>
-        </svg>`,
+        nextArrow: `
+            <button class="gallery-slider__arrow_svg_wrapper">
+                <svg class="gallery-slider__arrow gallery-slider__arrow_svg gallery-slider__arrow_svg_no-gradient" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM23.5303 6.53033C23.8232 6.23744 23.8232 5.76256 23.5303 5.46967L18.7574 0.696699C18.4645 0.403806 17.9896 0.403806 17.6967 0.696699C17.4038 0.989592 17.4038 1.46447 17.6967 1.75736L21.9393 6L17.6967 10.2426C17.4038 10.5355 17.4038 11.0104 17.6967 11.3033C17.9896 11.5962 18.4645 11.5962 18.7574 11.3033L23.5303 6.53033ZM1 6.75L23 6.75V5.25L1 5.25L1 6.75Z"/>
+                </svg>
+                <svg class="gallery-slider__arrow gallery-slider__arrow_svg gallery-slider__arrow_svg_gradient" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM23.5303 6.53033C23.8232 6.23744 23.8232 5.76256 23.5303 5.46967L18.7574 0.696699C18.4645 0.403806 17.9896 0.403806 17.6967 0.696699C17.4038 0.989592 17.4038 1.46447 17.6967 1.75736L21.9393 6L17.6967 10.2426C17.4038 10.5355 17.4038 11.0104 17.6967 11.3033C17.9896 11.5962 18.4645 11.5962 18.7574 11.3033L23.5303 6.53033ZM1 6.75L23 6.75V5.25L1 5.25L1 6.75Z"/>
+                </svg>
+            </button>
+        `,
+        prevArrow: `
+            <button class="gallery-slider__arrow_svg_wrapper">
+                <svg class="gallery-slider__arrow gallery-slider__arrow_svg gallery-slider__arrow_svg_no-gradient" style="transform: rotate(180deg)" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM23.5303 6.53033C23.8232 6.23744 23.8232 5.76256 23.5303 5.46967L18.7574 0.696699C18.4645 0.403806 17.9896 0.403806 17.6967 0.696699C17.4038 0.989592 17.4038 1.46447 17.6967 1.75736L21.9393 6L17.6967 10.2426C17.4038 10.5355 17.4038 11.0104 17.6967 11.3033C17.9896 11.5962 18.4645 11.5962 18.7574 11.3033L23.5303 6.53033ZM1 6.75L23 6.75V5.25L1 5.25L1 6.75Z"/>
+                </svg>
+                <svg class="gallery-slider__arrow gallery-slider__arrow_svg gallery-slider__arrow_svg_gradient" viewBox="0 0 24 12" style="transform: rotate(180deg)" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM23.5303 6.53033C23.8232 6.23744 23.8232 5.76256 23.5303 5.46967L18.7574 0.696699C18.4645 0.403806 17.9896 0.403806 17.6967 0.696699C17.4038 0.989592 17.4038 1.46447 17.6967 1.75736L21.9393 6L17.6967 10.2426C17.4038 10.5355 17.4038 11.0104 17.6967 11.3033C17.9896 11.5962 18.4645 11.5962 18.7574 11.3033L23.5303 6.53033ZM1 6.75L23 6.75V5.25L1 5.25L1 6.75Z"/>
+                </svg>
+            </button>
+        `,
     });
-
+    
     $('.gallery-slider__wrapper').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         const counterBlock = document.querySelector('#gallery-slider-counter');
         const amountBlock = document.querySelector('#gallery-slider-amount');

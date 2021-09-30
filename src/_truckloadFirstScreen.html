@@ -12,7 +12,6 @@
 <body>
     <!-- <?php include_once("images/socials.svg"); ?> -->
     <section class="section first-screen">
-        @@include('_header.html')
         <div class="main-slider">
             <div class="main-slider__item">
                 <img class="main-slider__img" src="./images/galleryHome/3.png" alt="gallery image">
@@ -28,11 +27,15 @@
         </div>
 
         <div class="first-screen__content">
+            @@include('_header.html')
+
             <div class="wrapper first-screen__wrapper">
                 <div class="first-screen__content_main">
-                    <div class="first-screen__content_info">
-                        <span class="first-screen__breadcrumbs">Home / Truckload</span>
+                    <div class="first-screen__breadcrumbs">
+                        <span class="first-screen__breadcrumbs__span">Home / Truckload</span>
+                    </div>
 
+                    <div class="first-screen__content_info">
                         <div class="main-slider__text-slider">
                             <div>
                                 <h1 class="first-screen__content_info_title">Truckload</h1>
@@ -78,7 +81,7 @@
                             <div><span class="first-screen__button_text ">For shippers</span></div>
                         </a>
 
-                        <a href="for-carriers.html" class="first-screen__button first-screen__button_active">
+                        <a href="for-carriers.html" class="first-screen__button">
                             <span class="first-screen__button_text">For Carriers</span>
                             <div><span class="first-screen__button_text">For Carriers</span></div>
                         </a>

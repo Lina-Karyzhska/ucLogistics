@@ -31,16 +31,25 @@
 
     .contacts {
       &__item {
+        column-gap: 10px;
+
         border-top: 2px solid #ffffff;
         padding: 15px 0;
 
         @media (max-width: 768px) {
+          column-gap: 6px;
           padding: 12px 0;
         }
       }
 
       &__svg {
-        fill: url(#gradient);
+        &_no-gradient {
+          opacity: 0;
+        }
+
+        &_gradient {
+          opacity: 1;
+        }
       }
 
       &__text {

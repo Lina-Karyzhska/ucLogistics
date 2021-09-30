@@ -1,0 +1,29 @@
+<section class="modal form-modal d-none opacity0">
+    <div class="modal__wrapper">
+        @@include('_closeButtonModal.html')
+
+        <div id="open-position__modal-form" class="modal-form modal__content">
+            <h2 class="title modal__title">Send a request</h2>
+            <form action="" class="modal__form">
+                <div class="modal__form__group">
+                    <input class="modal__form__input" type="text" placeholder="Name">
+                    <input class="modal__form__input" type="email" placeholder="Email">
+                    <input class="modal__form__input" type="tel" placeholder="Phone">
+                </div>
+
+                <button class="button button__with-gradient modal__button">
+                    <span class="button__span button__with-gradient__span">Request a quote</span>
+                </button>
+            </form>
+        </div>
+
+        <div id="open-position__modal-thanks" class="modal__content modal__content-thanks d-none">
+            <h2 class="modal__title modal__title-thanks">Thank you for your request!</h2>
+            <p class="modal__text">We will contact you soon.</p>
+        </div>
+
+        <div class="loading d-none">
+            @@include('_loading.html')
+        </div>
+    </div>
+</section>

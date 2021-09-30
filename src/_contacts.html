@@ -1,15 +1,26 @@
 <div>
     @@include('_phone.html')
     <div class="contacts__item">
-        <svg class="contacts__svg contacts__svg_mail">
-            <use xlink:href="images/contacts.svg#mail"></use>
-        </svg>
+        <div class="contacts__item__svg">
+            <svg class="contacts__svg contacts__svg_no-gradient contacts__svg_mail">
+                <use xlink:href="images/contacts.svg#mail"></use>
+            </svg>
+            <svg class="contacts__svg  contacts__svg_gradient contacts__svg_mail">
+                <use xlink:href="images/contacts.svg#mail"></use>
+            </svg>
+        </div>
         <a class="contacts__text" href="mailto:info@us.logistics.com">info@us.logistics.com</a>
     </div>
+
     <div class="contacts__item">
-        <svg class="contacts__svg">
-            <use xlink:href="images/contacts.svg#pointer"></use>
-        </svg>
+        <div class="contacts__item__svg">
+            <svg class="contacts__svg contacts__svg_no-gradient">
+                <use xlink:href="images/contacts.svg#pointer"></use>
+            </svg>
+            <svg class="contacts__svg contacts__svg_gradient">
+                <use xlink:href="images/contacts.svg#pointer"></use>
+            </svg>
+        </div>
         <address class="contacts__text contacts__address">4000 Bordentown Ave, Sayreville, NJ 08872</address>
     </div>
 </div>

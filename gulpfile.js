@@ -96,6 +96,7 @@ function watching() {
     watch(["src/*.html", "src/.htaccess"], html);
     watch(["src/js/**/*.js"], scripts);
     watch(["src/scss/**/*.scss"], styles);
+    watch(["src/fonts/**/*"], fonts);
     watch(["src/images/**/*.{jpg,png,gif,ico,webp}"], imgs);
     watch(["src/images/*.svg"], svg);
 };
