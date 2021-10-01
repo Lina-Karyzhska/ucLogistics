@@ -10,10 +10,15 @@
 
   &__wrapper {
     display: grid;
-    grid-template-columns: 170px 100px 170px 190px;
-    column-gap: calc((100% - 630px) / 3);
+    grid-template-columns: 200px 130px 170px 260px;
+    column-gap: calc((100% - 760px) / 3);
 
     max-width: 1920px;
+
+    @media (max-width: 1921px) {
+      grid-template-columns: 170px 100px 170px 190px;
+      column-gap: calc((100% - 630px) / 3);
+    }
 
     @media (max-width: 768px) {
       grid-template-columns: 138px 80px 100px 165px;
@@ -119,12 +124,20 @@
     }
 
     .contacts__item {
-      column-gap: 5px;
+      column-gap: 11px;
+
+      @media (max-width: 1921px) {
+        column-gap: 5px;
+      }
     }
   }
 
   .socials {
-    width: 170px;
+    width: 100%;
+
+    @media (max-width: 1921px) {
+      width: 170px;
+    }
 
     @media (max-width: 768px) {
       width: 138px;
@@ -135,8 +148,13 @@
     }
 
     &__svg {
-      width: 22px;
-      height: 22px;
+      width: 28px;
+      height: 28px;
+
+      @media (max-width: 1920px) {
+        width: 22px;
+        height: 22px;
+      }
 
       @media (max-width: 768px) {
         width: 18px;
