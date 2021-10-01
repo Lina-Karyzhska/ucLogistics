@@ -67,6 +67,10 @@
     }
   }
 
+  .contacts__item {
+    column-gap: 11px;
+  }
+
   @media (max-width: 550px) {
     .logo {
       width: 60px;
