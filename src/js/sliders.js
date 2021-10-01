@@ -5,7 +5,6 @@ const getNumber = (number) => {
 $(function() {
     $('.main-slider').on('init', function(event, slick) {
         const amountBlock = document.querySelector('#main-slider-amount');
-        console.log(amountBlock);
         amountBlock.textContent = getNumber(slick.slideCount);
       });
 
